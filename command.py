@@ -49,12 +49,12 @@ def make_new_part(submission, reply, search_title):
         # Get number after Part
         part_no = submission.title.partition("Part")[-1]
         print(part_no)
-        new_title = search_title + " Part " + str(part_no + 1)
+        new_title = search_title + " (Part " + str(part_no + 1)+")"
         archive_here = "[Archive Here]" + "(https://www.reddit.com" + submission.permalink + ")\n\n"
         flairsub.submit(new_title, selftext=archive_here + reply, send_replies=False)
     else:
         #Add part 2 to title
-        new_title = search_title + " Part 2"
+        new_title = search_title + " (Part 2)"
         archive_here = "[Archive Here]" + "(https://www.reddit.com" + submission.permalink + ")\n\n"
         flairsub.submit(new_title, selftext=archive_here + reply, send_replies=False)
 
