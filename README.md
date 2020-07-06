@@ -70,3 +70,12 @@ Flair the user
 
 Save the original 'Flair!' comment.
 
+---------------------------------------
+# Usage
+- Make changes to praw.ini
+- To run, python needs to be installed.
+- Make subreddit name changes in app.py and command.py:
+  subreddit = reddit.subreddit("")
+  flairsub = reddit.subreddit("")
+- Test this on testing subreddit.
+
